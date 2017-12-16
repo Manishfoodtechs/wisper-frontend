@@ -1,14 +1,16 @@
 {
   "title": "My demo server",
+  "defaultChannel": 0,
   "channels": [
     {
       "id": 1,
       "name": "Welcome",
       "maxUsers": 6,
       "permissions": {
-        "voice": true,
+        "voice": false,
         "video": false,
-        "screensharing": false
+        "screensharing": false,
+        "chat": true
       },
       "allowGuests": true,
       "color": "#fc4400"
@@ -20,7 +22,8 @@
       "permissions": {
         "voice": true,
         "video": true,
-        "screensharing": true
+        "screensharing": true,
+        "chat": true
       },
       "allowGuests": false,
       "color": "#449900"
@@ -32,7 +35,8 @@
       "permissions": {
         "voice": true,
         "video": false,
-        "screensharing": false
+        "screensharing": false,
+        "chat": false
       },
       "allowGuests": false,
       "color": "#ccc"
