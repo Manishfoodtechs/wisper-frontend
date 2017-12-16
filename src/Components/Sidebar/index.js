@@ -14,6 +14,11 @@ export default class Sidebar extends Component {
         <ul className="Sidebar__navigation">
           {this.renderChannelItems()}
         </ul>
+        <ul className="Sidebar__serverNavigation">
+          <li className="Sidebar__serverNavigationItem">
+            <Link to="/server/settings">Server Settings</Link>
+          </li>
+        </ul>
       </nav>
     )
   }
@@ -22,7 +27,7 @@ export default class Sidebar extends Component {
     return DemoServer.channels.map((channel, key) => {
       return (
         <li key={key} className="SidebarChannel">
-          <Link to={`/server/channels/${channel.id}`}>{channel.name}</Link>
+          <Link to={`/server/channels/${key}`}>{channel.name}</Link>
         </li>
       )
     })

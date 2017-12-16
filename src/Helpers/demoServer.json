@@ -10,6 +10,7 @@
         "video": false,
         "screensharing": false
       },
+      "allowGuests": true,
       "color": "#fc4400"
     },
     {
@@ -21,7 +22,20 @@
         "video": true,
         "screensharing": true
       },
+      "allowGuests": false,
       "color": "#449900"
+    },
+    {
+      "id": 3,
+      "name": "Counter-Strike: Global Offensive",
+      "maxUsers": -1,
+      "permissions": {
+        "voice": true,
+        "video": false,
+        "screensharing": false
+      },
+      "allowGuests": false,
+      "color": "#ccc"
     }
   ]
 }
