@@ -2,15 +2,12 @@
 
 # dependencies
 /node_modules
-/gh-pages/node_modules
 
 # testing
 /coverage
-/gh-pages/coverage
 
 # production
 /build
-/gh-pages/build
 
 # misc
 .DS_Store
