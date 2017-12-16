@@ -1,0 +1,27 @@
+{
+  "title": "My demo server",
+  "channels": [
+    {
+      "id": 1,
+      "name": "Welcome",
+      "maxUsers": 6,
+      "permissions": {
+        "voice": true,
+        "video": false,
+        "screensharing": false
+      },
+      "color": "#fc4400"
+    },
+    {
+      "id": 2,
+      "name": "Videocalling",
+      "maxUsers": -1,
+      "permissions": {
+        "voice": true,
+        "video": true,
+        "screensharing": true
+      },
+      "color": "#449900"
+    }
+  ]
+}
