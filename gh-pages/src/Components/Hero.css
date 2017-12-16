@@ -1,22 +1,44 @@
-.UI__Hero {
-  background: #1B1EC1;
-  padding: 75px 0;
+.Hero {
+  background: linear-gradient(to bottom right, #1B1EC1, #060888);
+  overflow: hidden;
   text-align: center;
 }
 
-.UI__Hero__Title {
+.Hero__Wrapper {
+  position: relative;
+}
+
+.Hero__Background {
+  background-position: bottom center;
+  background-size: 2000px 150px;
+  bottom: 0;
+  height: 150px;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+}
+
+.Hero__Inner {
+  padding: 96px 0 200px;
+  position: relative;
+  z-index: 2;
+}
+
+@media screen and (max-width: 767px) {
+  .Hero__Inner {
+    padding: 35px 0 150px;
+  }
+}
+
+.Hero__Title {
   color: #fff;
   font-size: 48px;
+  margin: 0;
 }
 
-.UI__Hero__TitleRepo {
-  margin-top: 8px;
-  font-size: 16px;
-  display: block;
-  opacity: .45;
-}
-
-.UI__Hero__TagLine {
+.Hero__TagLine {
   color: #fff;
-  font-size: 24px;
+  font-size: 20px;
+  font-weight: 300;
 }

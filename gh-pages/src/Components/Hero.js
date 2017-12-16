@@ -2,8 +2,12 @@ import React, { Component } from 'react'
 import './Hero.css'
 import Config from '../config'
 import UI from './UI'
-
+import HeroWaves from '../Assets/hero-waves.svg'
 import { Spin } from 'antd'
+
+const heroBackgroundStyles = {
+  backgroundImage: `url("${HeroWaves}")`
+}
 
 export default class Hero extends Component {
   constructor (props) {
@@ -28,10 +32,8 @@ export default class Hero extends Component {
 
   render () {
     return (
-      <div className="UI__Hero">
-        <UI.Container>
-          {this.renderHeroContent()}
-        </UI.Container>
+      <div className="Hero">
+        {this.renderHeroContent()}
       </div>
     )
   }
@@ -39,12 +41,14 @@ export default class Hero extends Component {
   renderHeroContent () {
     if (this.state.repo) {
       return (
-        <div className="UI__Hero__Inner">
-          <h1 className="UI__Hero__Title">
-            Wisper
-            <small className="UI__Hero__TitleRepo">{this.state.repo.full_name}</small>
-          </h1>
-          <p className="UI__Hero__TagLine">{this.state.repo.description}</p>
+        <div class="Hero__Wrapper">
+          <div className="Hero__Inner">
+            <UI.Container>
+              <h1 className="Hero__Title">Wisper</h1>
+              <p className="Hero__TagLine">Wisper is a open-source alternative to Slack, Discord etc. for selfhosting built by the community.</p>
+            </UI.Container>
+          </div>
+          <div class="Hero__Background" style={heroBackgroundStyles}></div>
         </div>
       )
     } else {
