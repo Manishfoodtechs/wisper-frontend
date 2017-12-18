@@ -1,0 +1,31 @@
+$primary: $wisper-purple
+$primary-invert: $wisper-purple-invert
+
+$info: $wisper-yellow
+$info-invert: $wisper-yellow-invert
+
+$danger: $wisper-red
+$danger-invert: $wisper-red-invert
+
+$success: $wisper-green
+$success-invert: $wisper-green-invert
+
+$link: $primary
+$text: $wisper-grey
+
+$gap: 30px
+
+$family-primary: $wisper-family-primary
+
+$body-size: 14px
+
+$linkedin: #0077b5
+$linkedin-invert: findColorInvert($linkedin)
+$twitter: #55acee
+$twitter-invert: findColorInvert($twitter)
+$github: #333
+$github-invert: findColorInvert($github)
+
+@import "../../../node_modules/bulma/sass/utilities/derived-variables"
+$addColors: ("twitter":($twitter, $twitter-invert), "linkedin": ($linkedin, $linkedin-invert), "github": ($github, $github-invert))
+$colors: map-merge($colors, $addColors)

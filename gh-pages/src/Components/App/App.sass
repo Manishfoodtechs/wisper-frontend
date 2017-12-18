@@ -1,0 +1,24 @@
+// 1. Import the initial variables
+@import "../../../node_modules/bulma/sass/utilities/initial-variables"
+@import "../../../node_modules/bulma/sass/utilities/functions"
+
+// 2. Set your own initial variables
+@import "./Wisper"
+
+// 3. Set the derived variables
+@import "./_Overrides"
+
+// 6. Import the rest of Bulma
+@import "../../../node_modules/bulma/bulma"
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6
+  color: $wisper-grey-dark
+  margin-bottom: 1rem
+
+p
+  margin-bottom: 1rem

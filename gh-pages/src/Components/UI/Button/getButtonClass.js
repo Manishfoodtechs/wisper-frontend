@@ -1,8 +1,8 @@
 const getButtonClass = (props) => {
   let buttonClass = ['button']
 
-  if (props.buttonStyle) {
-    switch (props.buttonStyle) {
+  if (props.variant) {
+    switch (props.variant) {
       case 'primary':
         buttonClass.push('is-primary')
         break
