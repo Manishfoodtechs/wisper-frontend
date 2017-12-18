@@ -8,19 +8,8 @@
   position: relative;
 }
 
-.Hero__Background {
-  background-position: bottom center;
-  background-size: 2000px 150px;
-  bottom: 0;
-  height: 150px;
-  left: 0;
-  position: absolute;
-  width: 100%;
-  z-index: 1;
-}
-
 .Hero__Inner {
-  padding: 96px 0 200px;
+  padding: 96px 0;
   position: relative;
   z-index: 2;
 }
@@ -31,14 +20,17 @@
   }
 }
 
-.Hero__Title {
-  color: #fff;
-  font-size: 48px;
+.Hero__Logo {
+  width: auto;
   margin: 0;
+  height: 96px;
+  color: #fff;
 }
 
 .Hero__TagLine {
   color: #fff;
   font-size: 20px;
-  font-weight: 300;
+  font-weight: 400;
+  max-width: 480px;
+  margin: 24px auto 0;
 }

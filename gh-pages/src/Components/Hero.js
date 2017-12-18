@@ -1,13 +1,8 @@
 import React, { Component } from 'react'
 import './Hero.css'
 import Config from '../config'
-import UI from './UI'
-import HeroWaves from '../Assets/hero-waves.svg'
-import { Spin } from 'antd'
 
-const heroBackgroundStyles = {
-  backgroundImage: `url("${HeroWaves}")`
-}
+import LogoWhite from '../Assets/logo-white.svg'
 
 export default class Hero extends Component {
   constructor (props) {
@@ -41,18 +36,15 @@ export default class Hero extends Component {
   renderHeroContent () {
     if (this.state.repo) {
       return (
-        <div class="Hero__Wrapper">
+        <div className="Hero__Wrapper">
           <div className="Hero__Inner">
-            <UI.Container>
-              <h1 className="Hero__Title">Wisper</h1>
-              <p className="Hero__TagLine">Wisper is a open-source alternative to Slack, Discord etc. for selfhosting built by the community.</p>
-            </UI.Container>
+            <img className="Hero__Logo" src={LogoWhite} alt="Wisper" />
+            <p className="Hero__TagLine">Wisper is a open-source alternative to Slack, Discord etc. for selfhosting built by the community.</p>
           </div>
-          <div class="Hero__Background" style={heroBackgroundStyles}></div>
         </div>
       )
     } else {
-      <Spin />
+
     }
   }
 }
