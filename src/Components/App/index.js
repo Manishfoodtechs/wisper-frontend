@@ -11,7 +11,7 @@ import ViewChannelSettings from '../ViewChannelSettings'
 import ChannelConnector from '../ChannelConnector'
 import Sidebar from '../Sidebar'
 
-import DemoServer from '../../Helpers/demoServer.json'
+// import DemoServer from '../../Helpers/demoServer.json'
 
 class App extends Component {
   constructor (props) {
