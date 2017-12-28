@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 import { Link, withRouter } from 'react-router-dom'
 
-import Navbar from '../Navbar'
-import Sidebar from '../Sidebar'
+import Navbar from '../Navbar/index.jsx'
+import Sidebar from '../Sidebar/index.jsx'
 
 import DemoServer from '../../Helpers/demoServer.json'
 

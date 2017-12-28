@@ -2,4 +2,42 @@
 
 .Sidebar
   background: $color-dark-dark
+  border-right: $border-general
+  display: flex
+  flex-direction: column
   grid-area: sidebar
+
+  &__header
+    margin-bottom: 16px
+
+  &__serverTitle
+    background-color: darken($color-dark, 5)
+    border-bottom: $border-general
+    display: flex
+    flex-direction: column
+    height: 64px
+    justify-content: center
+    padding: 12px
+
+    &:hover
+      background-color: darken($color-dark, 7)
+
+  &__navigation
+    flex-grow: 1
+
+  &__serverNavigation
+    border-top: $border-general
+
+  &__serverNavigationLink
+    background: darken($color-dark-dark, 2)
+    color: $color-invert
+    display: block
+    font-family: $font-stack-secondary
+    font-size: 10px
+    font-weight: 600
+    padding: 16px 12px
+    text-align: center
+
+    &:hover,
+    &--active
+      background: darken($color-dark-dark, 3)

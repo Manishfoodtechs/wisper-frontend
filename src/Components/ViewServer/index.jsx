@@ -8,7 +8,7 @@ export default class ViewServer extends Component {
     super(props)
 
     this.state = {
-      defaultChannel: DemoServer.defaultChannel
+      defaultChannel: DemoServer.defaultChannel + 1
     }
   }
 

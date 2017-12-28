@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 
-import Navbar from '../Navbar'
-import Sidebar from '../Sidebar'
+import Navbar from '../Navbar/index.jsx'
+import Sidebar from '../Sidebar/index.jsx'
 
 class ViewChannelSettings extends Component {
   constructor (props) {

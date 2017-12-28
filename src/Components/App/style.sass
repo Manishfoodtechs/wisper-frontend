@@ -3,8 +3,21 @@
 html,
 body,
 #root
+  font-size: 14px
   height: 100%
   position: relative
+
+*,
+*:before,
+*:after
+  box-sizing: border-box
+
+a
+  color: $color-invert-light
+  text-decoration: none
+
+  &:hover
+    color: $color-invert
 
 .App
   background: $color-dark

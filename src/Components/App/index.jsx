@@ -2,12 +2,12 @@ import React, { Component } from 'react';
 
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 
-import ViewHome from '../ViewHome'
-import ViewServer from '../ViewServer'
-import ViewServerSettings from '../ViewServerSettings'
-import ViewChannels from '../ViewChannels'
-import ViewChannelSingle from '../ViewChannelSingle'
-import ViewChannelSettings from '../ViewChannelSettings'
+import ViewHome from '../ViewHome/index.jsx'
+import ViewServer from '../ViewServer/index.jsx'
+import ViewServerSettings from '../ViewServerSettings/index.jsx'
+import ViewChannels from '../ViewChannels/index.jsx'
+import ViewChannelSingle from '../ViewChannelSingle/index.jsx'
+import ViewChannelSettings from '../ViewChannelSettings/index.jsx'
 
 // import DemoServer from '../../Helpers/demoServer.json'
 
