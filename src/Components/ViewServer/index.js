@@ -15,7 +15,6 @@ export default class ViewServer extends Component {
   render () {
     return (
       <div>
-        <h1>Server</h1>
         <Redirect to={`/server/channels/${this.state.defaultChannel}`} />
       </div>
     )

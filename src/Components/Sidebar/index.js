@@ -2,6 +2,8 @@ import React, { Component } from 'react'
 
 import { Link } from 'react-router-dom'
 
+import './style.sass'
+
 import DemoServer from '../../Helpers/demoServer.json'
 
 export default class Sidebar extends Component {

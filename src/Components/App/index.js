@@ -8,8 +8,6 @@ import ViewServerSettings from '../ViewServerSettings'
 import ViewChannels from '../ViewChannels'
 import ViewChannelSingle from '../ViewChannelSingle'
 import ViewChannelSettings from '../ViewChannelSettings'
-import ChannelConnector from '../ChannelConnector'
-import Sidebar from '../Sidebar'
 
 // import DemoServer from '../../Helpers/demoServer.json'
 
@@ -29,38 +27,16 @@ class App extends Component {
   render () {
     return (
       <div className="App">
-        <div className="App-navbar">
-
-        </div>
-        <div className="App-sidebar">
-
-        </div>
-        <div className="App-user">
-
-        </div>
-        <div className="App-content">
-          <Router>
-            <div>
-              <Sidebar />
-              <Switch>
-                <Route exact path="/" component={ViewHome} />
-                <Route exact path="/server" component={ViewServer} />
-                <Route exact path="/server/settings" component={ViewServerSettings} />
-                <Route exact path="/server/channels" component={ViewChannels} />
-                <Route exact path="/server/channels/:channelId" component={ViewChannelSingle} />
-                <Route exact path="/server/channels/:channelId/settings" component={ViewChannelSettings} />
-              </Switch>
-            </div>
-          </Router>
-
-          <ChannelConnector
-            channelId={this.state.currentChannel}
-            streamVoice={this.state.streamVoice}
-            streamVideo={this.state.streamVideo} />
-          <hr />
-          <button onClick={this.handleConnectClick.bind(this)} disabled={(this.state.currentChannel) ? 'disabled': false}>Connect to Voice/Video Channel 1</button>
-          <button onClick={this.handleDisconnectClick.bind(this)} disabled={(!this.state.currentChannel) ? 'disabled': false}>Disconnect from Voice/Video</button>
-        </div>
+        <Router>
+          <Switch>
+            <Route exact path="/" component={ViewHome} />
+            <Route exact path="/server" component={ViewServer} />
+            <Route exact path="/server/settings" component={ViewServerSettings} />
+            <Route exact path="/server/channels" component={ViewChannels} />
+            <Route exact path="/server/channels/:channelId" component={ViewChannelSingle} />
+            <Route exact path="/server/channels/:channelId/settings" component={ViewChannelSettings} />
+          </Switch>
+        </Router>
       </div>
     );
   }
