@@ -1,0 +1,33 @@
+@import "../../style.sass"
+
+html,
+body,
+#root
+  height: 100%
+  position: relative
+
+.App
+  background: $color-dark
+  color: $color-invert-light
+  display: grid
+  font-family: $font-stack
+  grid-template-areas: "sidebar navbar navbar" "sidebar content content" "user content content"
+  grid-template-columns: 296px 1fr 296px
+  grid-template-rows: 64px 1fr 64px
+  height: 100%
+  position: relative
+
+.App-navbar
+  background: darken($color-dark, 4)
+  grid-area: navbar
+
+.App-sidebar
+  background: $color-dark-dark
+  grid-area: sidebar
+
+.App-user
+  background: darken($color-dark-dark, 4)
+  grid-area: user
+
+.App-content
+  grid-area: content
