@@ -8,14 +8,13 @@ export default class ViewServer extends Component {
     super(props)
 
     this.state = {
-      defaultChannel: DemoServer.defaultChannel
+      defaultChannel: DemoServer.defaultChannel + 1
     }
   }
 
   render () {
     return (
       <div>
-        <h1>Server</h1>
         <Redirect to={`/server/channels/${this.state.defaultChannel}`} />
       </div>
     )

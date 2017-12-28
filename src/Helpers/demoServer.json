@@ -1,45 +1,94 @@
 {
   "title": "My demo server",
   "defaultChannel": 0,
-  "channels": [
+  "groups": [
     {
-      "id": 1,
-      "name": "Welcome",
-      "maxUsers": 6,
-      "permissions": {
-        "voice": false,
-        "video": false,
-        "screensharing": false,
-        "chat": true
-      },
-      "allowGuests": true,
-      "color": "#fc4400"
+      "title": "General",
+      "items": [
+        {
+          "id": 1,
+          "name": "Welcome",
+          "maxUsers": 6,
+          "permissions": {
+            "voice": false,
+            "video": false,
+            "screensharing": false,
+            "chat": true
+          },
+          "allowGuests": true,
+          "color": "#fc4400"
+        },
+        {
+          "id": 2,
+          "name": "Videocalling",
+          "maxUsers": -1,
+          "permissions": {
+            "voice": true,
+            "video": true,
+            "screensharing": true,
+            "chat": true
+          },
+          "allowGuests": false,
+          "color": "#449900"
+        },
+        {
+          "id": 3,
+          "name": "Counter-Strike: Global Offensive",
+          "maxUsers": -1,
+          "permissions": {
+            "voice": true,
+            "video": false,
+            "screensharing": false,
+            "chat": false
+          },
+          "allowGuests": false,
+          "color": "#ccc"
+        }
+      ]
     },
     {
-      "id": 2,
-      "name": "Videocalling",
-      "maxUsers": -1,
-      "permissions": {
-        "voice": true,
-        "video": true,
-        "screensharing": true,
-        "chat": true
-      },
-      "allowGuests": false,
-      "color": "#449900"
-    },
-    {
-      "id": 3,
-      "name": "Counter-Strike: Global Offensive",
-      "maxUsers": -1,
-      "permissions": {
-        "voice": true,
-        "video": false,
-        "screensharing": false,
-        "chat": false
-      },
-      "allowGuests": false,
-      "color": "#ccc"
+      "title": "Teams",
+      "items": [
+        {
+          "id": 4,
+          "name": "Frontend",
+          "maxUsers": 6,
+          "permissions": {
+            "voice": false,
+            "video": false,
+            "screensharing": false,
+            "chat": true
+          },
+          "allowGuests": true,
+          "color": "#fc4400"
+        },
+        {
+          "id": 5,
+          "name": "Backend",
+          "maxUsers": -1,
+          "permissions": {
+            "voice": true,
+            "video": true,
+            "screensharing": true,
+            "chat": true
+          },
+          "allowGuests": false,
+          "color": "#449900"
+        },
+        {
+          "id": 6,
+          "name": "Design",
+          "maxUsers": -1,
+          "permissions": {
+            "voice": true,
+            "video": false,
+            "screensharing": false,
+            "chat": false
+          },
+          "allowGuests": false,
+          "color": "#ccc"
+        }
+      ]
     }
   ]
 }

@@ -1,0 +1,36 @@
+@import "../../style.sass"
+
+html,
+body,
+#root
+  font-size: 14px
+  height: 100%
+  position: relative
+
+*,
+*:before,
+*:after
+  box-sizing: border-box
+
+a
+  color: $color-invert-light
+  text-decoration: none
+
+  &:hover
+    color: $color-invert
+
+.App
+  background: $color-dark
+  color: $color-invert-light
+  display: block
+  font-family: $font-stack
+  height: 100%
+  position: relative
+
+.App-view
+  display: grid
+  grid-template-areas: "sidebar navbar navbar" "sidebar content content"
+  grid-template-columns: 296px 1fr 296px
+  grid-template-rows: 64px 1fr
+  height: 100%
+  position: relative

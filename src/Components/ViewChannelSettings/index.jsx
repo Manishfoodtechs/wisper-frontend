@@ -1,5 +1,8 @@
 import React, { Component } from 'react'
 
+import Navbar from '../Navbar/index.jsx'
+import Sidebar from '../Sidebar/index.jsx'
+
 class ViewChannelSettings extends Component {
   constructor (props) {
     super(props)
@@ -11,8 +14,9 @@ class ViewChannelSettings extends Component {
 
   render () {
     return (
-      <div>
-        <h1>Channel Settings: {this.state.channelId}</h1>
+      <div className="App-view">
+        <Navbar />
+        <Sidebar />
       </div>
     )
   }
